@@ -1,0 +1,1 @@
+managers.network:session():load_lobby()

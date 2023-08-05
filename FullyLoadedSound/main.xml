@@ -1,0 +1,5 @@
+<table name="FullyLoadedSound">
+	<Sounds directory="assets">
+		<sound id="amog" path="amog.ogg"/>
+	</Sounds>
+</table>

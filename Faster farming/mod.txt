@@ -1,0 +1,35 @@
+{
+	"name": "Faster farming",
+	"description": "Adds keybinds for restart + terminate contract. Uses Instant Restart by Takku.",
+	"author": "dumbsaltyho, Takku",
+	"contact": "dumbsaltyho#6969, http://steamcommunity.com/id/takku/",
+    "image" : "logo.png",
+	"version" : "2.0",
+	"priority": 10,
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path": "RebuyContract.lua"
+		}
+	],
+	"keybinds": [
+		{
+			"keybind_id": "TerminateContract",
+			"name": "TerminateContract",
+			"description": "Terminates contract.",
+			"script_path": "terminate.lua",
+			"run_in_menu": true,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "RebuyKeybind",
+			"name": "RebuyKeybind",
+			"description": "Rebuys contract.",
+			"script_path": "rebuy.lua",
+			"run_in_menu": true,
+			"run_in_game": false,
+			"localized": false
+		}
+	]
+}

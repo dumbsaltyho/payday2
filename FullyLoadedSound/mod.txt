@@ -1,0 +1,16 @@
+{
+  "name": "FullyLoadedSound",
+  "description": "Play a sound when fully loaded triggers.",  
+  "author": "stel",
+  "image" : "stel.png",
+  "color" : "105 65 143",  
+  "version": "1",
+  "priority": 10,
+  "blt_version": 2,
+  "hooks": [
+    {
+      "hook_id": "lib/player_actions/skills/playeractionfullyloaded",
+      "script_path": "playeractionfullyloaded.lua"
+    }
+  ]
+}
