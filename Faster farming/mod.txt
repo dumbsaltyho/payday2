@@ -10,7 +10,10 @@
 		{
 			"hook_id" : "lib/managers/menumanager",
 			"script_path": "RebuyContract.lua"
-		}
+		},
+		{
+			"hook_id" : "lib/managers/votemanager",
+			"script_path" : "restart_hook.lua"
 	],
 	"keybinds": [
 		{
@@ -18,7 +21,7 @@
 			"name": "TerminateContract",
 			"description": "Terminates contract.",
 			"script_path": "terminate.lua",
-			"run_in_menu": true,
+			"run_in_menu": false,
 			"run_in_game": true,
 			"localized": false
 		},
@@ -29,6 +32,15 @@
 			"script_path": "rebuy.lua",
 			"run_in_menu": true,
 			"run_in_game": false,
+			"localized": false
+		},
+		{
+			"keybind_id": "RestartKeybind",
+			"name": "RestartKeybind",
+			"description": "Restarts contract.",
+			"script_path": "restart.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
 			"localized": false
 		}
 	]
