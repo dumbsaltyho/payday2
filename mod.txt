@@ -1,0 +1,32 @@
+{
+    "name": "Example mod.txt",
+    "description": "Example mod.txt generated using superblt_helper.py",
+    "author": "stel",
+    "contact": "discord: @stel",
+    "image": "logo.png",
+    "color": "105 65 143",
+    "version": "1",
+    "priority": "10",
+    "blt_version": "2",
+    "hooks": [
+        {
+            "hook_id": "lib/managers/playermanager",
+            "script_path": "playermanager.lua"
+        },
+        {
+            "hook_id": "lib/tweak_data/playertweakdata",
+            "script_path": "playertweakdata.lua"
+        }
+    ],
+    "keybinds": [
+        {
+            "keybind_id": "ExampleKeybind",
+            "name": "Example keybind",
+            "description": "Example keybind",
+            "script_path": "exkeybind.lua",
+            "run_in_menu": "true",
+            "run_in_game": "true",
+            "localized": "false"
+        }
+    ]
+}
