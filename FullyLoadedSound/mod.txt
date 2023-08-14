@@ -2,7 +2,7 @@
   "name": "FullyLoadedSound",
   "description": "Play a sound when fully loaded triggers.",  
   "author": "stel",
-  "contact": "dumbsaltyho#6969, http://steamcommunity.com/id/takku/",
+  "contact": "@stel on discord",
   "image" : "stel.png",
   "color" : "105 65 143",  
   "version": "1",
