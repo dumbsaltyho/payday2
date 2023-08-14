@@ -1,0 +1,17 @@
+{
+  "name": "CloakerCrash",
+  "description": "Crashes your game when a Cloaker kicks you, just like the good ol' days (unless you have Counterstrike aced).",  
+  "author": "stel",
+  "contact": "@stel on discord",
+  "image" : "stel.png",
+  "color" : "105 65 143",  
+  "version": "1",
+  "priority": 10,
+  "blt_version": 2,
+  "hooks": [
+    {
+      "hook_id": "lib/units/beings/player/playermovement",
+      "script_path": "playermovement.lua"
+    }
+  ]
+}
