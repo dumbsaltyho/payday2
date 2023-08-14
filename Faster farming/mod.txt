@@ -1,8 +1,8 @@
 {
 	"name": "Faster farming",
-	"description": "Adds keybinds for restart + terminate contract. Uses Instant Restart by Takku.",
+	"description": "Adds keybinds for restart + terminate + rebuy contract. Uses Instant Restart by Takku. and Rebuy Contract 1.2 by test1 (originally by FishTaco).",
 	"author": "dumbsaltyho, Takku",
-	"contact": "dumbsaltyho#6969, http://steamcommunity.com/id/takku/",
+	"contact": "@stel on discord, http://steamcommunity.com/id/takku/",
     "image" : "logo.png",
 	"version" : "2.0",
 	"priority": 10,
