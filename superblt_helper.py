@@ -13,18 +13,18 @@ mod_version: str = input("mod version (default: 1): ") or "1"
 mod_priority: str = input("mod priority (default: 10): ") or "10"
 
 mod_txt_json: dict = {
-	"name" : f"{mod_name}",
-	"description" : f"{mod_description}",
-	"author" : f"{mod_author}",
-	"contact" : f"{mod_contact}",
-	"image" : f"{mod_image}",
-	"color" : f"{mod_color}",  
-	"version" : f"{mod_version}",
-	"priority" : f"{mod_priority}",
+	"name" : mod_name,
+	"description" : mod_description,
+	"author" : mod_author,
+	"contact" : mod_contact,
+	"image" : mod_image,
+	"color" : mod_color,  
+	"version" : mod_version,
+	"priority" : mod_priority,
 	"blt_version" : "2"
 }
 if (input("do you need hooks? (y/n): ") == "y"):
-	mod_txt_json["hooks"] = []
+	mod_txt_json["hooks"]:list  = []
 	while mod_is_building_hooks:
 		add_mod_hook_id: str = input("hook id, when you're finished adding hooks just press enter:\n")
 		if (add_mod_hook_id == "") or (add_mod_hook_id == None):
@@ -40,7 +40,7 @@ if (input("do you need hooks? (y/n): ") == "y"):
 else: pass
 
 if (input("do you need keybinds? (y/n): ") == "y"):
-	mod_txt_json["keybinds"] = []
+	mod_txt_json["keybinds"]: list = []
 	while mod_is_building_hooks:
 		add_mod_keybind_id: str = input("keybind id, when you're finished adding keybinds just press enter:\n")
 		if (add_mod_keybind_id == "") or (add_mod_keybind_id == None):
@@ -54,15 +54,47 @@ if (input("do you need keybinds? (y/n): ") == "y"):
 			add_mod_keybind_localized: str = input("localized (true / false, default: false)?") or "false"
 
 		add_mod_keybind_info: dict = {
-			"keybind_id" : f"{add_mod_keybind_id}",
-			"name" : f"{add_mod_keybind_name}",
-			"description" : f"{add_mod_keybind_desc}",
-			"script_path" : f"{add_mod_keybind_script_path}",
-			"run_in_menu" : f"{add_mod_keybind_run_in_menu}",
-			"run_in_game" : f"{add_mod_keybind_run_in_game}",
-			"localized" : f"{add_mod_keybind_localized}",
+			"keybind_id" : add_mod_keybind_id,
+			"name" : add_mod_keybind_name,
+			"description" : add_mod_keybind_desc,
+			"script_path" : add_mod_keybind_script_path,
+			"run_in_menu" : add_mod_keybind_run_in_menu,
+			"run_in_game" : add_mod_keybind_run_in_game,
+			"localized" : add_mod_keybind_localized,
 		}
 		mod_txt_json["keybinds"].append(add_mod_keybind_info)
+else: pass
+
+if (input("do you need pre-hooks? (y/n): ") == "y"):
+	mod_txt_json["pre_hooks"]:list  = []
+	while mod_is_building_hooks:
+		add_mod_prehook_id: str = input("pre-hook id, when you're finished adding prehooks just press enter:\n")
+		if (add_mod_prehook_id == "") or (add_mod_prehook_id == None):
+			break
+		else:
+			add_mod_prehook_script_path: str = input("lua script path:\n")
+
+		add_mod_prehook_info: dict = {
+			"hook_id" : f"{add_mod_prehook_id}",
+			"script_path" : f"{add_mod_prehook_script_path}"
+		}
+		mod_txt_json["hooks"].append(add_mod_prehook_info)
+else: pass
+
+if (input("do you need persist scripts? (y/n): ") == "y"):
+	mod_txt_json["persist_scripts"]:list  = []
+	while mod_is_building_hooks:
+		add_mod_persist_global: str = input("persist script global, when you're finished adding persist scripts just press enter:\n")
+		if (add_mod_persist_global == "") or (add_mod_persist_global == None):
+			break
+		else:
+			add_mod_persist_script_path: str = input("lua script path:\n")
+
+		add_mod_persist_info: dict = {
+			"global" : f"{add_mod_persist_global}",
+			"script_path" : f"{add_mod_persist_script_path}"
+		}
+		mod_txt_json["persist_scripts"].append(add_mod_hook_info)
 else: pass
 
 print("written to mod.txt:")
