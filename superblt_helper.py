@@ -78,7 +78,7 @@ if (input("do you need pre-hooks? (y/n): ") == "y"):
 			"hook_id" : f"{add_mod_prehook_id}",
 			"script_path" : f"{add_mod_prehook_script_path}"
 		}
-		mod_txt_json["hooks"].append(add_mod_prehook_info)
+		mod_txt_json["pre_hooks"].append(add_mod_prehook_info)
 else: pass
 
 if (input("do you need persist scripts? (y/n): ") == "y"):

@@ -1,9 +1,9 @@
 {
     "name": "test",
-    "description": "add later",
-    "author": "stel",
-    "contact": "discord: @stel",
-    "image": "stel.png",
+    "description": "test",
+    "author": "test",
+    "contact": "test",
+    "image": "test",
     "color": "105 65 143",
     "version": "1",
     "priority": "10",
@@ -12,13 +12,25 @@
         {
             "hook_id": "test",
             "script_path": "test"
-        },
+        }
+    ],
+    "keybinds": [
+        {
+            "keybind_id": "test",
+            "name": "test",
+            "description": "test",
+            "script_path": "test",
+            "run_in_menu": "true",
+            "run_in_game": "true",
+            "localized": "false"
+        }
+    ],
+    "pre_hooks": [
         {
             "hook_id": "test",
             "script_path": "test"
         }
     ],
-    "pre_hooks": [],
     "persist_scripts": [
         {
             "hook_id": "test",
