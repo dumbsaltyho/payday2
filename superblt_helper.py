@@ -94,7 +94,7 @@ if (input("do you need persist scripts? (y/n): ") == "y"):
 			"global" : f"{add_mod_persist_global}",
 			"script_path" : f"{add_mod_persist_script_path}"
 		}
-		mod_txt_json["persist_scripts"].append(add_mod_hook_info)
+		mod_txt_json["persist_scripts"].append(add_mod_persist_info)
 else: pass
 
 print("written to mod.txt:")

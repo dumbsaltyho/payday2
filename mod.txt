@@ -1,9 +1,9 @@
 {
     "name": "test",
-    "description": "test",
-    "author": "test",
-    "contact": "test",
-    "image": "test",
+    "description": "add later",
+    "author": "stel",
+    "contact": "discord: @stel",
+    "image": "stel.png",
     "color": "105 65 143",
     "version": "1",
     "priority": "10",
@@ -33,7 +33,7 @@
     ],
     "persist_scripts": [
         {
-            "hook_id": "test",
+            "global": "test",
             "script_path": "test"
         }
     ]
