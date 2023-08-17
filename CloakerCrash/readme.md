@@ -1,0 +1,1 @@
+crashes the game when a cloaker kicks you.

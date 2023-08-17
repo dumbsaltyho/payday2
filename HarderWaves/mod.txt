@@ -1,0 +1,17 @@
+{
+    "name": "HarderWaves",
+    "description": "Makes it always 4 player scaled spawns, and always on the hardest tier of wave. uses Always 4 Player Spawns by Pudge and Always Max Difficulty by Ellie.",
+    "author": "Pudge, Ellie, stel",
+    "contact": "/id/poodgie, https://modworkshop.net/user/ellie, /id/hella_stella",
+    "image": "logo.png",
+    "color": "105 65 143",
+    "version": "1",
+    "priority": "10",
+    "blt_version": "2",
+    "hooks": [
+        {
+            "hook_id": "lib/managers/group_ai_states/groupaistatebase",
+            "script_path": "groupaistatebase.lua"
+        }
+    ]
+}
