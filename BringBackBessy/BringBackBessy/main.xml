@@ -1,0 +1,74 @@
+<mod name="BringBackBessy" color="Color(0.01,0.62,0.98)">
+	<Localization directory="loc" default="english.txt"/>
+
+	<WeaponMod id="wpn_fps_spec_bessy_barrel" based_on="wpn_fps_snp_wa2000_m_standard" unit="units/mods/weapons/wpn_fps_spec_bessy_pts/wpn_fps_spec_bessy_barrel" third_unit="units/mods/weapons/wpn_fps_spec_bessy_pts/wpn_third_spec_bessy_barrel" a_obj="a_alignment" type="barrel" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_spec_bessy_rod" based_on="wpn_fps_snp_wa2000_m_standard" unit="units/mods/weapons/wpn_fps_spec_bessy_pts/wpn_fps_spec_bessy_rod" third_unit="units/mods/weapons/wpn_fps_spec_bessy_pts/wpn_third_spec_bessy_rod" a_obj="a_alignment" type="extra" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_spec_bessy_reciever" based_on="wpn_fps_snp_wa2000_body_standard" unit="units/mods/weapons/wpn_fps_spec_bessy_pts/wpn_fps_spec_bessy_reciever"third_unit="units/mods/weapons/wpn_fps_spec_bessy_pts/wpn_third_spec_bessy_reciever" a_obj="a_alignment" type="reciever" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_spec_bessy_stock" based_on="wpn_fps_snp_wa2000_s_standard" unit="units/mods/weapons/wpn_fps_spec_bessy_pts/wpn_fps_spec_bessy_stock" third_unit="units/mods/weapons/wpn_fps_spec_bessy_pts/wpn_third_spec_bessy_stock" a_obj="a_alignment" type="stock" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_spec_bessy_bayonette" based_on="wpn_fps_snp_mosin_ns_bayonet" unit="units/mods/weapons/wpn_fps_spec_bessy_pts/wpn_fps_spec_bessy_bayonette "third_unit="units/mods/weapons/wpn_fps_spec_bessy_pts/wpn_third_spec_bessy_bayonette" a_obj="a_ns" type="bayonet" ver="2" is_a_unlockable="false">
+		<stats min_damage="4" min_damage_effect="1.75" concealment="-2" max_damage_effect="1.75" value="1" max_damage="4"/>
+	</WeaponMod>
+
+	<Weapon>
+		<weapon id="bessy" based_on="m95" CLIP_AMMO_MAX="1" NR_CLIPS_MAX="15" muzzleflash="effects/payday2/particles/weapons/50cal_auto_fps" special_damage_multiplier="5" damage_melee="weapon_data.damage_melee_default" damage_melee_effect_mul="weapon_data.damage_melee_effect_multiplier_default">
+			<stats damage="200" spread="24" recoil="1" concealment="6" suppression="5"/>
+			<stats_modifiers damage="50"/>
+			<kick>
+				<standing>
+					<value_node value="3.0"/>
+					<value_node value="4.8"/>
+					<value_node value="-0.3"/>
+					<value_node value="0.3"/>
+				</standing>
+				<crouching>
+					<value_node value="3.0"/>
+					<value_node value="4.8"/>
+					<value_node value="-0.3"/>
+					<value_node value="0.3"/>
+				</crouching>
+				<steelsight>
+					<value_node value="3.0"/>
+					<value_node value="4.8"/>
+					<value_node value="-0.3"/>
+					<value_node value="0.3"/>
+				</steelsight>
+			</kick>
+			<sounds fire="musket_fire"/>
+			<AMMO_PICKUP>
+				<value_node value="0.2"/>
+				<value_node value="0.8"/>
+			</AMMO_PICKUP>
+			<fire_mode_data fire_rate="1"/>
+			<animations reload_name_id="bessy"/>
+			<timers reload_empty="11.1" equip="0.5" unequip="0.6"/>
+		</weapon>
+
+		<factory id="wpn_fps_spec_bessy">
+			<default_blueprint>
+				<value_node value="wpn_fps_spec_bessy_barrel"/>
+				<value_node value="wpn_fps_spec_bessy_rod"/>
+				<value_node value="wpn_fps_spec_bessy_reciever"/>
+				<value_node value="wpn_fps_spec_bessy_stock"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_spec_bessy_barrel"/>
+				<value_node value="wpn_fps_spec_bessy_rod"/>
+				<value_node value="wpn_fps_spec_bessy_reciever"/>
+				<value_node value="wpn_fps_spec_bessy_stock"/>
+				<value_node value="wpn_fps_spec_bessy_bayonette"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="-0.777 -0.503 -0.127"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="-0.777 -4.503 0.873"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="-8.777 -5.503 5.873"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<AddFiles directory="assets" auto_generate="true"/>
+</mod>

@@ -1,1 +1,1 @@
-brings back bessy (flintlock freddy) from the pd2 10th anniversary. will stop working if overkill ever cleans the files.
+brings back bessy (flintlock freddy) from the pd2 10th anniversary. ~~will stop working if overkill ever cleans the files~~. should keep working as i readded everything for convenience.
