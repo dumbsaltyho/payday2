@@ -1,0 +1,4 @@
+{
+	"bm_w_bessy" : "Bessy",
+	"bm_wp_wpn_fps_spec_bessy_bayonette" : "Bayonette"
+}
