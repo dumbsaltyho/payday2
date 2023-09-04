@@ -73,4 +73,8 @@
 		</stance>
 	</Weapon>
 	<AddFiles directory="assets" auto_generate="true"/>
+	<Hooks>
+		<hook source_file="lib/tweak_data/tweakdatapd2" file="lua/tweakdatapd2.lua"/>
+		<hook source_file="lib/managers/menuscenemanager" file="lua/menuscenemanager.lua"/>
+	</Hooks>
 </mod>
